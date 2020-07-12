@@ -3,8 +3,24 @@
 <head>
     <title>File upload with progress bar</title>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
-    
+
+    <form id="uploadForm" action="upload.php" method="post">
+        <div>
+            <label>Upload File:</label>
+            <input name="userFile" id="userFile" type="file" class="demoInputBox">
+        </div>
+        <div>
+            <input type="submit" id="btnSubmit" value="Submit" class="btnSubmit">
+        </div>
+        <div id="progress-div">
+            <div id="progress-bar"></div>
+        </div>
+    </form>
+
 </body>
 </html>
