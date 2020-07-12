@@ -2,3 +2,7 @@
     color: green;
     background-color: red;
 }
+
+#submit, #reset {
+    width: 100px;
+}

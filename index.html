@@ -10,13 +10,19 @@
 <body>
 
     <form id="uploadForm" action="upload.php" method="post">
-        <div>
-            <label>Upload File:</label>
-            <input name="userFile" id="userFile" type="file" class="demoInputBox">
+
+        <div class="form-group">
+            <label for="userFile">Upload File</label>
+            <input name="userFile" id="userFile" type="file" class="form-control-file">
         </div>
-        <div>
-            <input type="submit" id="btnSubmit" value="Submit" class="btnSubmit">
+
+        <div class="form-group">
+            <input type="submit" id="submit" class="btn btn-primary">
+            <input type="reset" id="reset" class="btn btn-danger">
         </div>
+        <div class="progress" style="width: 500px">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 90%"></div>
+          </div>
         <div id="progress-div">
             <div id="progress-bar"></div>
         </div>
